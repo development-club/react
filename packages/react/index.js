@@ -37,10 +37,10 @@ export type Interaction = {
 // Export all exports so that they're available in tests.
 // We can't use export * from in Flow for some reason.
 export {
-  Children,
+  Children, // 
   createRef,
-  Component,
-  PureComponent,
+  Component, //
+  PureComponent,//
   createContext,
   forwardRef,
   lazy,
@@ -64,7 +64,7 @@ export {
   unstable_DebugTracingMode,
   StrictMode,
   Suspense,
-  createElement,
+  createElement, //
   cloneElement,
   isValidElement,
   version,

@@ -73,14 +73,14 @@ const Children = {
 };
 
 export {
-  Children,
+  Children,// 处理内嵌的子元素
   createMutableSource,
-  createRef,
-  Component,
-  PureComponent,
+  createRef,// 创建一个元素的引用，通过ref操作DOM
+  Component, // 类组件
+  PureComponent, // 类组件继承 这个该类来代替手写 shouldComponentUpdate。但它只进行浅比较，所以当 props 或者 state 某种程度是可变的话浅比较会有遗漏，那你就不能使用它了
   createContext,
-  forwardRef,
-  lazy,
+  forwardRef, // 跨层级传递引用 （用的比较少）
+  lazy, // 该接口配合Suspense接口使用，可以组件的懒加载
   memo,
   useCallback,
   useContext,
@@ -98,7 +98,7 @@ export {
   REACT_STRICT_MODE_TYPE as StrictMode,
   REACT_DEBUG_TRACING_MODE_TYPE as unstable_DebugTracingMode,
   REACT_SUSPENSE_TYPE as Suspense,
-  createElement,
+  createElement, // 生成
   cloneElement,
   isValidElement,
   ReactVersion as version,
